@@ -1,0 +1,6 @@
+apiVersion: v2
+name: klum
+description: Kubernetes Lazy User Manager
+type: application
+version: 1.0.0
+appVersion: "0.2.0"

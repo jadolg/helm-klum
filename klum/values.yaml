@@ -1,0 +1,5 @@
+namespace: klum
+replicas: 1
+version: v0.2.0
+context_name: dev
+server: https://myserver.example.com:6443
