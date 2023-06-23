@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: klum
-  namespace: {{- .Values.namespace}}
+  namespace: {{ .Values.namespace }}
 spec:
-  replicas: {{- .Values.replicas}}
+  replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
       run: klum
@@ -15,12 +15,12 @@ spec:
     spec:
       serviceAccountName: klum
       containers:
-        - image: "ghcr.io/jadolg/klum:{{- .Values.version}}"
+        - image: "ghcr.io/jadolg/klum:{{ .Values.version }}"
           name: klum
           env:
             - name: CONTEXT_NAME
-              value: {{- .Values.context_name}}
+              value: {{ .Values.context_name }}
             - name: SERVER
-              value: {{- .Values.server}}
+              value: {{ .Values.server }}
             - name: NAMESPACE
-              value: {{- .Values.namespace}}
+              value: {{ .Values.namespace }}
