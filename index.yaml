@@ -3,12 +3,22 @@ entries:
   klum:
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2023-06-23T15:13:45.608675779+02:00"
+    created: "2023-06-23T15:37:00.254074662+02:00"
     description: Kubernetes Lazy User Manager
-    digest: 3181178e37d147acde521c51043264578c08acf0284f2a297246513e7892f653
+    digest: 4cb698dbbfa248ddf5f5b0df80a070c71741895b77a14492e869ac6d5aa7cc2b
+    name: klum
+    type: application
+    urls:
+    - https://jadolg.github.io/helm-klum/klum-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2023-06-23T15:37:00.25395692+02:00"
+    description: Kubernetes Lazy User Manager
+    digest: c3ffe7625a27317b06d117b06dda756622331fbec40dc92af60cb4e02d0dd9e4
     name: klum
     type: application
     urls:
     - https://jadolg.github.io/helm-klum/klum-1.0.0.tgz
     version: 1.0.0
-generated: "2023-06-23T15:13:45.608471499+02:00"
+generated: "2023-06-23T15:37:00.25375792+02:00"
