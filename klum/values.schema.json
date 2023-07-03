@@ -5,6 +5,10 @@
       "type": "string",
       "default": "klum"
     },
+    "create_namespace": {
+      "type": "boolean",
+      "default": false
+    },
     "replicas": {
       "type": "integer",
       "default": 1
