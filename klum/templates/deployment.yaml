@@ -14,7 +14,7 @@ spec:
     spec:
       serviceAccountName: klum
       containers:
-        - image: "ghcr.io/jadolg/klum:{{ .Values.version }}"
+        - image: "ghcr.io/jadolg/klum:{{ .Chart.AppVersion }}"
           name: klum
           env:
             - name: CONTEXT_NAME

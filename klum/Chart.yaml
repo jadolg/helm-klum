@@ -3,4 +3,4 @@ name: klum
 description: Kubernetes Lazy User Manager
 type: application
 version: 1.2.0
-appVersion: "0.3.0"
+appVersion: v0.3.0

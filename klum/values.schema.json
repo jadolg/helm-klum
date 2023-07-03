@@ -13,9 +13,6 @@
       "type": "integer",
       "default": 1
     },
-    "version": {
-      "type": "string"
-    },
     "context_name": {
       "type": "string"
     },
