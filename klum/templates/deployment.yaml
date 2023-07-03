@@ -19,7 +19,7 @@ spec:
           env:
             - name: CONTEXT_NAME
               value: {{ .Values.context_name }}
-            - name: SERVER
+            - name: SERVER_NAME
               value: {{ .Values.server }}
             - name: NAMESPACE
               value: {{ .Release.Namespace }}
