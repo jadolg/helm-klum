@@ -22,4 +22,4 @@ spec:
             - name: SERVER
               value: {{ .Values.server }}
             - name: NAMESPACE
-              value: {{ .Values.namespace }}
+              value: {{ .Release.Namespace }}

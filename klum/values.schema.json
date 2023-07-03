@@ -1,14 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
   "properties": {
-    "namespace": {
-      "type": "string",
-      "default": "klum"
-    },
-    "create_namespace": {
-      "type": "boolean",
-      "default": false
-    },
     "replicas": {
       "type": "integer",
       "default": 1
