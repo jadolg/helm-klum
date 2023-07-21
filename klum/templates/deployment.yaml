@@ -23,3 +23,12 @@ spec:
               value: {{ .Values.server }}
             - name: NAMESPACE
               value: {{ .Release.Namespace }}
+            {{- if .Values.github_token }}
+            - name: GITHUB_URL
+              value: {{ .Values.github_url }}
+            - name: GITHUB_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: klum-github-token
+                  key: GITHUB_TOKEN
+            {{- end }}

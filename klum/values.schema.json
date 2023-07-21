@@ -10,6 +10,14 @@
     },
     "server": {
       "type": "string"
+    },
+    "github_token": {
+      "default": "",
+      "type": "string"
+    },
+    "github_url": {
+      "default": "",
+      "type": "string"
     }
   }
 }

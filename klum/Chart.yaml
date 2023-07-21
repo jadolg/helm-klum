@@ -2,5 +2,5 @@ apiVersion: v2
 name: klum
 description: Kubernetes Lazy User Manager
 type: application
-version: 1.7.0
-appVersion: v0.3.3
+version: 1.8.0
+appVersion: v0.4.1

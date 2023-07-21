@@ -1,3 +1,5 @@
 replicas: 1
 context_name: dev
 server: https://myserver.example.com:6443
+github_token: ""
+github_url: ""
