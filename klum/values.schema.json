@@ -11,13 +11,35 @@
     "server": {
       "type": "string"
     },
-    "github_token": {
-      "default": "",
-      "type": "string"
-    },
-    "github_url": {
-      "default": "",
-      "type": "string"
+    "github":{
+      "type": "object",
+      "properties": {
+        "token": {
+          "default": "",
+          "description": "The token used to push kubeconfigs to GitHub if you need this feature",
+          "type": "string"
+        },
+        "url": {
+          "default": "",
+          "description": "The GitHub API base URL if you are using GitHub Enterprise",
+          "type": "string"
+        },
+        "app_private_key_file": {
+          "default": "",
+          "description": "GitHub private key file if you are using App based authentication",
+          "type": "string"
+        },
+        "app_private_key": {
+          "default": "",
+          "description": "GitHub private key if you are using App based authentication",
+          "type": "string"
+        },
+        "app_id": {
+          "default": "",
+          "description": "GitHub app id if you are using App based authentication",
+          "type": "string"
+        }
+      }
     }
   }
 }

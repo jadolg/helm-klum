@@ -12,10 +12,22 @@ spec:
       labels:
         run: klum
     spec:
+      {{- if or .Values.github.app_private_key_file .Values.github.app_private_key }}
+      volumes:
+        - name: klum-github-app-key-file
+          secret:
+            secretName: klum-github-app-key-file
+      {{- end }}
       serviceAccountName: klum
       containers:
         - image: "ghcr.io/jadolg/klum:{{ .Chart.AppVersion }}"
           name: klum
+          {{- if or .Values.github.app_private_key_file .Values.github.app_private_key }}
+          volumeMounts:
+            - name: klum-github-app-key-file
+              readOnly: true
+              mountPath: "/github-app-private-key-file.json"
+          {{- end }}
           env:
             - name: CONTEXT_NAME
               value: {{ .Values.context_name }}
@@ -23,12 +35,20 @@ spec:
               value: {{ .Values.server }}
             - name: NAMESPACE
               value: {{ .Release.Namespace }}
-            {{- if .Values.github_token }}
             - name: GITHUB_URL
-              value: {{ .Values.github_url }}
+              value: {{ .Values.github.url }}
+            {{- if .Values.github.token }}
             - name: GITHUB_TOKEN
               valueFrom:
                 secretKeyRef:
                   name: klum-github-token
                   key: GITHUB_TOKEN
+            {{- end }}
+            {{- if .Values.github.app_id }}
+            - name: GITHUB_APP_ID
+              value: {{ .Values.github.app_id | quote }}
+            {{- end }}
+            {{- if or .Values.github.app_private_key_file .Values.github.app_private_key }}
+            - name: GITHUB_TOKEN
+              value: /github-app-private-key-file.json
             {{- end }}
