@@ -50,5 +50,5 @@ spec:
             {{- end }}
             {{- if or .Values.github.app_private_key_file .Values.github.app_private_key }}
             - name: GITHUB_APP_PRIVATE_KEY_FILE
-              value: /github-app-private-key-file.json
+              value: /github-app-private-key-file
             {{- end }}
