@@ -49,6 +49,6 @@ spec:
               value: {{ .Values.github.app_id | quote }}
             {{- end }}
             {{- if or .Values.github.app_private_key_file .Values.github.app_private_key }}
-            - name: GITHUB_TOKEN
+            - name: GITHUB_APP_PRIVATE_KEY_FILE
               value: /github-app-private-key-file.json
             {{- end }}
