@@ -1,0 +1,13 @@
+{{- if and .Values.metrics .Values.metrics.port (gt (.Values.metrics.port | int) 0) }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: klum
+spec:
+  selector:
+    run: klum
+  ports:
+    - port: {{ .Values.metrics.port | int }}
+      name: metrics
+      targetPort: metrics
+  {{- end }}

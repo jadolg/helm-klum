@@ -8,3 +8,6 @@ github:
   app_private_key_file: ""
   app_private_key: ""
   app_id: ""
+
+metrics:
+  port: 9090

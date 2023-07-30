@@ -16,7 +16,7 @@ spec:
       volumes:
         - name: klum-github-app-key-file
           secret:
-            secretName:  klum-github-app-key-file
+            secretName: klum-github-app-key-file
       {{- end }}
       serviceAccountName: klum
       containers:
@@ -28,6 +28,11 @@ spec:
               readOnly: true
               mountPath: "/secrets/"
           {{- end }}
+          ports:
+            {{- if and .Values.metrics .Values.metrics.port (gt (.Values.metrics.port | int) 0) }}
+            - containerPort: {{ .Values.metrics.port }}
+              name: metrics
+            {{- end }}
           env:
             - name: CONTEXT_NAME
               value: {{ .Values.context_name }}
@@ -52,3 +57,7 @@ spec:
             - name: GITHUB_APP_PRIVATE_KEY_FILE
               value: /secrets/github-app-private-key-file.json
             {{- end }}
+            {{- if and .Values.metrics .Values.metrics.port }}
+            - name: METRICS_PORT
+              value: {{ .Values.metrics.port | quote }}
+            {{- end}}

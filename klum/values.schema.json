@@ -11,7 +11,7 @@
     "server": {
       "type": "string"
     },
-    "github":{
+    "github": {
       "type": "object",
       "properties": {
         "token": {
@@ -38,6 +38,15 @@
           "default": "",
           "description": "GitHub app id if you are using App based authentication",
           "type": "string"
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "port": {
+          "type": "integer",
+          "default": 0
         }
       }
     }
