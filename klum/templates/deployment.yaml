@@ -28,6 +28,13 @@ spec:
               readOnly: true
               mountPath: "/secrets/"
           {{- end }}
+          securityContext:
+            capabilities:
+              drop:
+                - ALL
+            readOnlyRootFilesystem: true
+            runAsNonRoot: true
+            runAsUser: 1000
           ports:
             {{- if and .Values.metrics .Values.metrics.port (gt (.Values.metrics.port | int) 0) }}
             - containerPort: {{ .Values.metrics.port }}
