@@ -3,6 +3,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: klum
+  labels:
+    run: klum
 spec:
   selector:
     run: klum
