@@ -1,0 +1,15 @@
+{{- if .Values.service_monitor.enabled }}
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: klum
+  namespace: {{ .Release.Namespace }}
+spec:
+  selector:
+    matchLabels:
+      run: klum
+  endpoints:
+    - port: metrics
+      path: /metrics
+      interval: 30s
+{{- end}}

@@ -11,3 +11,6 @@ github:
 
 metrics:
   port: 9090
+
+service_monitor:
+  enabled: false
