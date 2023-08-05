@@ -49,6 +49,15 @@
           "default": 0
         }
       }
+    },
+    "service_monitor": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "default": false
+        }
+      }
     }
   }
 }

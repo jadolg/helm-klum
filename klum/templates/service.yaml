@@ -10,4 +10,4 @@ spec:
     - port: {{ .Values.metrics.port | int }}
       name: metrics
       targetPort: metrics
-  {{- end }}
+{{- end }}
