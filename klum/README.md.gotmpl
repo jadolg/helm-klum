@@ -1,0 +1,27 @@
+{{ template "chart.header" . }}
+{{ template "chart.deprecationWarning" . }}
+
+Source: <https://github.com/jadolg/klum>
+
+Chart: <https://github.com/jadolg/helm-klum>
+
+## Install
+1. `helm repo add klum https://jadolg.github.io/helm-klum/`
+2. `helm install <name> klum --set server=https://myserver.example.com:6443 --set context_name=dev`
+
+
+{{ template "chart.badgesSection" . }}
+
+{{ template "chart.description" . }}
+
+{{ template "chart.homepageLine" . }}
+
+{{ template "chart.maintainersSection" . }}
+
+{{ template "chart.sourcesSection" . }}
+
+{{ template "chart.requirementsSection" . }}
+
+{{ template "chart.valuesSection" . }}
+
+{{ template "helm-docs.versionFooter" . }}

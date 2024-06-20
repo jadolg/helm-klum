@@ -1,9 +1,12 @@
 lint:
 	helm lint klum
 
-build: lint
+build: lint docs
 	helm package klum
 	helm repo index --url https://jadolg.github.io/helm-klum/ --merge index.yaml .
+
+docs:
+	helm-docs
 
 uninstall_locally:
 	cd klum && helm uninstall klum -n klum
