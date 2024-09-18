@@ -19,8 +19,10 @@ spec:
             secretName: klum-github-app-key-file
       {{- end }}
       serviceAccountName: klum
+      {{- with .Values.podSecurityContext }}
       securityContext:
-        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
       containers:
         - image: "ghcr.io/jadolg/klum:{{ .Chart.AppVersion }}"
           name: klum
@@ -30,8 +32,10 @@ spec:
               readOnly: true
               mountPath: "/secrets/"
           {{- end }}
+          {{- with .Values.securityContext }}
           securityContext:
-            {{- toYaml .Values.securityContext | nindent 12 }}
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
           ports:
             {{- if and .Values.metrics .Values.metrics.port (gt (.Values.metrics.port | int) 0) }}
             - containerPort: {{ .Values.metrics.port }}
