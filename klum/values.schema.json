@@ -58,6 +58,12 @@
           "default": false
         }
       }
+    },
+    "podSecurityContext": {
+      "$ref": "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.31.0/podspec.json#/properties/securityContext"
+    },
+    "securityContext": {
+      "$ref": "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.31.0/container.json#/properties/securityContext"
     }
   }
 }
