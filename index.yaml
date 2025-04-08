@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   klum:
   - apiVersion: v2
+    appVersion: v0.8.7
+    created: "2025-04-08T11:26:00.77838241+02:00"
+    description: Kubernetes Lazy User Manager
+    digest: d09635b5e5e78e0e4c9a1219cab96c5784613d17d83ed5c0c9e7eed979d769c8
+    name: klum
+    type: application
+    urls:
+    - https://jadolg.github.io/helm-klum/klum-1.16.3.tgz
+    version: 1.16.3
+  - apiVersion: v2
     appVersion: v0.8.6
-    created: "2025-03-20T19:48:50.935994079+01:00"
+    created: "2025-04-08T11:26:00.77813565+02:00"
     description: Kubernetes Lazy User Manager
     digest: b9bb50ce70be30ca57cdb3aa45ac762fcaff48a1b9efcb57d5a4edeec7035ac5
     name: klum
@@ -13,7 +23,7 @@ entries:
     version: 1.16.2
   - apiVersion: v2
     appVersion: v0.8.3
-    created: "2025-03-20T19:48:50.935793993+01:00"
+    created: "2025-04-08T11:26:00.777906966+02:00"
     description: Kubernetes Lazy User Manager
     digest: fdc5ab8abd25bb7d8cd8f4c6aec9ce50a67695367b82912b58c1478e54225e53
     name: klum
@@ -23,7 +33,7 @@ entries:
     version: 1.16.1
   - apiVersion: v2
     appVersion: v0.8.2
-    created: "2025-03-20T19:48:50.935599648+01:00"
+    created: "2025-04-08T11:26:00.777680333+02:00"
     description: Kubernetes Lazy User Manager
     digest: b48bfe61f90e972ad587b937209d8b2aa72f619b30b2e74ec3e6db8c628d94ee
     name: klum
@@ -33,7 +43,7 @@ entries:
     version: 1.16.0
   - apiVersion: v2
     appVersion: v0.8.2
-    created: "2025-03-20T19:48:50.935399493+01:00"
+    created: "2025-04-08T11:26:00.777436781+02:00"
     description: Kubernetes Lazy User Manager
     digest: 0201b26042d9e83369acea83fa7ca094b5ac7626b22eafe2cd7e462892b53954
     name: klum
@@ -43,7 +53,7 @@ entries:
     version: 1.15.3
   - apiVersion: v2
     appVersion: v0.8.1
-    created: "2025-03-20T19:48:50.935141756+01:00"
+    created: "2025-04-08T11:26:00.777222141+02:00"
     description: Kubernetes Lazy User Manager
     digest: 84fde8ea7b3a67b955f823c73b99810895ad77dc07b13b3ced8695d25ee57ea1
     name: klum
@@ -53,7 +63,7 @@ entries:
     version: 1.15.2
   - apiVersion: v2
     appVersion: v0.8.1
-    created: "2025-03-20T19:48:50.934863039+01:00"
+    created: "2025-04-08T11:26:00.777009955+02:00"
     description: Kubernetes Lazy User Manager
     digest: f81db36d447432aa86b6eb538a4f09f5a868743d4f0dae019c52883c595e79c5
     name: klum
@@ -63,7 +73,7 @@ entries:
     version: 1.15.1
   - apiVersion: v2
     appVersion: v0.8.0
-    created: "2025-03-20T19:48:50.934539325+01:00"
+    created: "2025-04-08T11:26:00.776817171+02:00"
     description: Kubernetes Lazy User Manager
     digest: 1a1f913bd838d1a27e0d1b1cab53c7c35c3c9a4a5f419cdfb899177cc80b5923
     name: klum
@@ -73,7 +83,7 @@ entries:
     version: 1.15.0
   - apiVersion: v2
     appVersion: v0.7.0
-    created: "2025-03-20T19:48:50.933952895+01:00"
+    created: "2025-04-08T11:26:00.77662383+02:00"
     description: Kubernetes Lazy User Manager
     digest: 4b6b85c67d9253c4ad05fc5fcd90922b4294235bd1c0a4d992627bd7083e1d0f
     name: klum
@@ -83,7 +93,7 @@ entries:
     version: 1.14.0
   - apiVersion: v2
     appVersion: v0.6.0
-    created: "2025-03-20T19:48:50.933574325+01:00"
+    created: "2025-04-08T11:26:00.77642219+02:00"
     description: Kubernetes Lazy User Manager
     digest: 72c312d84c39f965af32a5fcbe4c40e01cc1d05e74cde39cd7c65a93b58d3b7c
     name: klum
@@ -93,7 +103,7 @@ entries:
     version: 1.13.2
   - apiVersion: v2
     appVersion: v0.6.0
-    created: "2025-03-20T19:48:50.933382015+01:00"
+    created: "2025-04-08T11:26:00.776173552+02:00"
     description: Kubernetes Lazy User Manager
     digest: b784066905d04e44735df0a3b0bcfc3211566af57ce44611d5054024d13573a0
     name: klum
@@ -103,7 +113,7 @@ entries:
     version: 1.13.1
   - apiVersion: v2
     appVersion: v0.6.0
-    created: "2025-03-20T19:48:50.933182891+01:00"
+    created: "2025-04-08T11:26:00.775474642+02:00"
     description: Kubernetes Lazy User Manager
     digest: d97bf1a5da4f0b297cfa75fa7d004a3602b73bf80352a423ea957adb455fcb66
     name: klum
@@ -113,7 +123,7 @@ entries:
     version: 1.13.0
   - apiVersion: v2
     appVersion: v0.6.0
-    created: "2025-03-20T19:48:50.932990931+01:00"
+    created: "2025-04-08T11:26:00.775360647+02:00"
     description: Kubernetes Lazy User Manager
     digest: 6f3ce5d1551bd5e1b2bc9dc7d3a58a133407ef93eecebd4c947302b3e6085b46
     name: klum
@@ -123,7 +133,7 @@ entries:
     version: 1.12.0
   - apiVersion: v2
     appVersion: v0.5.1
-    created: "2025-03-20T19:48:50.932820573+01:00"
+    created: "2025-04-08T11:26:00.775247375+02:00"
     description: Kubernetes Lazy User Manager
     digest: 4389255560e9752cb3d9e977bfc9fb7fbe2300fdd73ab7181a6cda5cc104e4e2
     name: klum
@@ -133,7 +143,7 @@ entries:
     version: 1.11.3
   - apiVersion: v2
     appVersion: v0.5.0
-    created: "2025-03-20T19:48:50.932591531+01:00"
+    created: "2025-04-08T11:26:00.775110781+02:00"
     description: Kubernetes Lazy User Manager
     digest: 61a6039fe684d69a22edfbc6b791e0992ca8d2ea2944a44cc096b99ac51a8594
     name: klum
@@ -143,7 +153,7 @@ entries:
     version: 1.11.2
   - apiVersion: v2
     appVersion: v0.5.0
-    created: "2025-03-20T19:48:50.932438737+01:00"
+    created: "2025-04-08T11:26:00.775011643+02:00"
     description: Kubernetes Lazy User Manager
     digest: 947ee06962d2c58a645ee7d297c01a4ccf3565787e1a3e5e95f58943e199023e
     name: klum
@@ -153,7 +163,7 @@ entries:
     version: 1.11.1
   - apiVersion: v2
     appVersion: v0.5.0
-    created: "2025-03-20T19:48:50.932276123+01:00"
+    created: "2025-04-08T11:26:00.774909764+02:00"
     description: Kubernetes Lazy User Manager
     digest: 12daaab6d3086994ea1b0cd1f836dadc1cb16ae35d9d8afe01821c0b83bac453
     name: klum
@@ -163,7 +173,7 @@ entries:
     version: 1.11.0
   - apiVersion: v2
     appVersion: v0.4.1
-    created: "2025-03-20T19:48:50.936857242+01:00"
+    created: "2025-04-08T11:26:00.779414834+02:00"
     description: Kubernetes Lazy User Manager
     digest: f07621cec5059861b461cfc226a5f48bc39b9929772787573d668fbf36a51869
     name: klum
@@ -173,7 +183,7 @@ entries:
     version: 1.8.0
   - apiVersion: v2
     appVersion: v0.3.3
-    created: "2025-03-20T19:48:50.936751799+01:00"
+    created: "2025-04-08T11:26:00.77928015+02:00"
     description: Kubernetes Lazy User Manager
     digest: 73b058b5176ed3a93e2cf9871b8556a6281bda6061a59fe4c20d554fdd0c52a6
     name: klum
@@ -183,7 +193,7 @@ entries:
     version: 1.7.0
   - apiVersion: v2
     appVersion: v0.3.2
-    created: "2025-03-20T19:48:50.936657547+01:00"
+    created: "2025-04-08T11:26:00.779151157+02:00"
     description: Kubernetes Lazy User Manager
     digest: 8c10ba65a330215eb1222232b75ce3a44775fb6da6576cbd281a55b0845dbc19
     name: klum
@@ -193,7 +203,7 @@ entries:
     version: 1.6.0
   - apiVersion: v2
     appVersion: v0.3.1
-    created: "2025-03-20T19:48:50.936556122+01:00"
+    created: "2025-04-08T11:26:00.779028466+02:00"
     description: Kubernetes Lazy User Manager
     digest: c27a169ac914fa4035369a0f0bb5cf97b235e03a993cbc9d20da0d74f7e89b5c
     name: klum
@@ -203,7 +213,7 @@ entries:
     version: 1.5.0
   - apiVersion: v2
     appVersion: v0.3.0
-    created: "2025-03-20T19:48:50.936451079+01:00"
+    created: "2025-04-08T11:26:00.77889792+02:00"
     description: Kubernetes Lazy User Manager
     digest: 7807652b5e641e3c24726e87eb9baf4fe5128b45ca5981c65f6c81de3275f4e9
     name: klum
@@ -213,7 +223,7 @@ entries:
     version: 1.4.1
   - apiVersion: v2
     appVersion: v0.3.0
-    created: "2025-03-20T19:48:50.936327591+01:00"
+    created: "2025-04-08T11:26:00.77877639+02:00"
     description: Kubernetes Lazy User Manager
     digest: 133332b4bba1fb39b6daebcfcc1e296a8c3328a81d85af506942a69d00eea4e6
     name: klum
@@ -223,7 +233,7 @@ entries:
     version: 1.4.0
   - apiVersion: v2
     appVersion: v0.3.0
-    created: "2025-03-20T19:48:50.936226246+01:00"
+    created: "2025-04-08T11:26:00.778653976+02:00"
     description: Kubernetes Lazy User Manager
     digest: 2b011f5eb2d7c3d9fa53f6ebb68629733dc6fbab08f4cc051e4cc48149f08c47
     name: klum
@@ -233,7 +243,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2025-03-20T19:48:50.936118418+01:00"
+    created: "2025-04-08T11:26:00.778521324+02:00"
     description: Kubernetes Lazy User Manager
     digest: 8c9a5059974f1a7da7635150329cbb2d837a55cd9745d97e68ec993b79d23e9a
     name: klum
@@ -243,7 +253,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2025-03-20T19:48:50.932055057+01:00"
+    created: "2025-04-08T11:26:00.774798921+02:00"
     description: Kubernetes Lazy User Manager
     digest: fc787e3a3fe8f9b08e1d52bcb5f657a5dee42c96964da57419e7a854cce8e13e
     name: klum
@@ -253,7 +263,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2025-03-20T19:48:50.931905649+01:00"
+    created: "2025-04-08T11:26:00.774709983+02:00"
     description: Kubernetes Lazy User Manager
     digest: 4cb698dbbfa248ddf5f5b0df80a070c71741895b77a14492e869ac6d5aa7cc2b
     name: klum
@@ -263,7 +273,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2025-03-20T19:48:50.931767443+01:00"
+    created: "2025-04-08T11:26:00.774618745+02:00"
     description: Kubernetes Lazy User Manager
     digest: c3ffe7625a27317b06d117b06dda756622331fbec40dc92af60cb4e02d0dd9e4
     name: klum
@@ -271,4 +281,4 @@ entries:
     urls:
     - https://jadolg.github.io/helm-klum/klum-1.0.0.tgz
     version: 1.0.0
-generated: "2025-03-20T19:48:50.931481031+01:00"
+generated: "2025-04-08T11:26:00.774433174+02:00"
