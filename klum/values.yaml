@@ -28,3 +28,7 @@ securityContext:
   runAsNonRoot: true
   runAsUser: 1000
   allowPrivilegeEscalation: false
+
+nodeSelector: {}
+tolerations: []
+affinity: {}

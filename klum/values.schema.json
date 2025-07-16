@@ -64,6 +64,15 @@
     },
     "securityContext": {
       "$ref": "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.31.0/container.json#/properties/securityContext"
+    },
+    "nodeSelector": {
+      "$ref": "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.31.0/podspec-v1.json#/properties/nodeSelector"
+    },
+    "tolerations": {
+      "$ref": "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.31.0/podspec-v1.json#/properties/tolerations"
+    },
+    "affinity": {
+      "$ref": "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.31.0/podspec-v1.json#/properties/affinity"
     }
   }
 }
