@@ -8,7 +8,7 @@ Chart: <https://github.com/jadolg/helm-klum>
 1. `helm repo add klum https://jadolg.github.io/helm-klum/`
 2. `helm install <name> klum --set server=https://myserver.example.com:6443 --set context_name=dev`
 
-![Version: 1.16.9](https://img.shields.io/badge/Version-1.16.9-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.8.9](https://img.shields.io/badge/AppVersion-v0.8.9-informational?style=flat-square)
+![Version: 1.16.10](https://img.shields.io/badge/Version-1.16.10-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.8.10](https://img.shields.io/badge/AppVersion-v0.8.10-informational?style=flat-square)
 
 Kubernetes Lazy User Manager
 
