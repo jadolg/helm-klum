@@ -2,6 +2,15 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: klum
+  {{- with .Values.deployment.labels }}
+  labels:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+  {{- with .Values.deployment.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+
 spec:
   replicas: {{ .Values.replicas }}
   selector:
@@ -80,4 +89,4 @@ spec:
             {{- if and .Values.metrics .Values.metrics.port }}
             - name: METRICS_PORT
               value: {{ .Values.metrics.port | quote }}
-            {{- end}}
+            {{- end }}
